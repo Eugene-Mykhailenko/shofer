@@ -1,0 +1,174 @@
+/* =======================================================================
+	Variables
+======================================================================= */
+
+
+// Colors
+$color-white:             #fff !default;
+$color-black:             #000 !default;
+$color-gray-darker:       #616161 !default;
+$color-gray-dark:         #757575 !default;
+$color-gray:              #9e9e9e !default;
+$color-gray-light:        #bdbdbd !default;
+$color-gray-lighter:      #e0e0e0 !default;
+
+$color-primary:           #2196f3 !default;
+$color-primary-light:     lighten($color-primary, 20%) !default;
+$color-primary-dark:      darken($color-primary, 20%) !default;
+$color-success:           rgba(76, 175, 80, 0.70) !default;
+$color-info:              rgba(91, 192, 222, 0.70) !default;
+$color-warning:           rgba(255, 235, 59, .70) !default;
+$color-danger:            rgba(244, 67, 54, .70) !default;
+
+
+$disabled-color:          lighten($color-gray-light, 15%);
+$disabled-text-color:     lighten($color-gray-lighter, 15%);
+
+
+
+$body-bg:                 $color-white !default;
+$text-color:              $color-gray-dark !default;
+
+$link-color:              $color-primary !default;
+$link-hover-color:        inherit !default;
+$link-hover-decoration:   none !default;
+
+
+
+
+/* =======================================================================
+	Typography
+======================================================================= */
+
+$font-family-base:        "Open sans", Helvetica, Arial, sans-serif !default;
+
+$font-size-base:          16px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$line-height-base:        1.428571429 !default; // 20/14
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+$headings-font-family:    inherit !default;
+$headings-font-weight:    500 !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          inherit !default;
+
+
+
+
+
+/* =======================================================================
+	Buttons
+========================================================================== */
+// General btn styles
+$btn-height: 35px !default;
+$btn-padding: 0 12px !default;
+$btn-font-size: 1em !default;
+$btn-font-weight: 300 !default;
+$btn-border: 1px !default;
+$btn-border-radius: 2px !default;
+
+// Buttons sizes
+//--------------
+// Extra Small buttons
+$btn-xs-button-height: 22px;
+$btn-xs-padding-horizontal: 1em;
+$btn-xs-font-size: $btn-xs-button-height * 0.5;
+$btn-xs-line-height: $btn-xs-button-height;
+$btn-xs-border-radius: $btn-border-radius;
+// Small buttons
+$btn-sm-button-height: 30px;
+$btn-sm-padding-horizontal: 1em;
+$btn-sm-font-size: $btn-sm-button-height * 0.5;
+$btn-sm-line-height: $btn-sm-button-height;
+$btn-sm-border-radius: $btn-border-radius;
+// Large buttons
+$btn-lg-button-height: 40px;
+$btn-lg-padding-horizontal: 1em;
+$btn-lg-font-size: $btn-lg-button-height * 0.5;
+$btn-lg-line-height: $btn-lg-button-height;
+$btn-lg-border-radius: $btn-border-radius;
+
+// Flat buttons
+//-----------------
+$btn-flat-color: #343434 !default;
+
+//Floating buttons
+//-----------------
+$btn-floating-background: $color-primary !default;
+$btn-floating-background-hover: $btn-floating-background !default;
+$btn-floating-color: $color-white !default;
+$btn-floating-size: 35px !default;
+$btn-floating-border: 1px !default;
+$btn-floating-radius: 50% !default;
+$btn-floating-font-size: 1em !default;
+
+
+// Floating buttons sizes
+//-----------------
+
+// Extra Small Floating Buttons
+$btn-floating-xs-size: 22px;
+$btn-floating-xs-font-size: $btn-floating-xs-size * 0.5;
+// Small Floating Buttons
+$btn-floating-sm-size: 30px;
+$btn-floating-sm-font-size: $btn-floating-sm-size * 0.5;
+// Large Floating Buttons
+$btn-floating-lg-size: 40px;
+$btn-floating-lg-font-size: $btn-floating-lg-size * 0.5;
+
+// Disabled styles
+$btn-disabled-background: $disabled-color !default;
+$btn-disabled-color: $disabled-text-color !default;
+
+//Btn colors
+//-----------------
+//btn-default
+$btn-default-color:              $color-gray-darker !default;
+$btn-default-bg:                 $color-white !default;
+$btn-default-border:             $color-gray-darker !default;
+//btn-primary
+$btn-primary-color:              $color-white !default;
+$btn-primary-bg:                 $color-primary !default;
+$btn-primary-border:             $btn-primary-bg !default;
+//btn-success
+$btn-success-color:              $color-white !default;
+$btn-success-bg:                 $color-success !default;
+$btn-success-border:             $btn-success-bg !default;
+//btn-info
+$btn-info-color:                 $color-white !default;
+$btn-info-bg:                    $color-info !default;
+$btn-info-border:                $btn-info-bg !default;
+//btn-warning
+$btn-warning-color:              $color-white !default;
+$btn-warning-bg:                 $color-warning !default;
+$btn-warning-border:             $btn-warning-bg !default;
+//btn-danger
+$btn-danger-color:               $color-white !default;
+$btn-danger-bg:                  $color-danger !default;
+$btn-danger-border:              $btn-danger-bg !default;
+
+
+
+
+
+
+//** Horizontal line color.
+$hr-border:                   $color-gray-lighter !default;
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,190 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.btn {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    height: $btn-height;
+	padding: $btn-padding;
+    margin-bottom: 0;
+    color: $btn-default-color;
+	line-height: $btn-height - ($btn-border * 2);
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    border: $btn-border solid $btn-default-bg;
+    border-radius: $btn-border-radius;
+    background-image: none;
+    background-color: $btn-default-bg;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none !important;
+    touch-action: manipulation;
+    @extend .--z__depth__1;
+    @include transition(0.3s);
+
+    &:hover {
+        @extend .--z__depth__1__half;
+    }
+
+	// Button Sizes
+	// --------------------------------------------------
+	&--lg {
+		@include button__size($btn-lg-button-height, $btn-lg-padding-horizontal, $btn-lg-font-size, $btn-lg-line-height, $btn-lg-border-radius);
+	}
+	&--sm {
+		@include button__size($btn-sm-button-height, $btn-sm-padding-horizontal, $btn-sm-font-size, $btn-sm-line-height, $btn-sm-border-radius);
+	}
+	&--xs {
+		@include button__size($btn-xs-button-height, $btn-xs-padding-horizontal, $btn-xs-font-size, $btn-xs-line-height, $btn-xs-border-radius);
+	}
+
+	// Flat button
+	&--flat {
+		box-shadow: none;
+		background-color: transparent;
+		color: $btn-flat-color;
+		cursor: pointer;
+		border-color: transparent;
+	}
+
+
+	&__floating {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		width: $btn-floating-size;
+		max-width: $btn-floating-size;
+		height: $btn-floating-size;
+		padding: 0;
+		overflow: hidden;
+		font-size: $btn-floating-font-size;
+		color: $btn-default-color;
+		line-height: $btn-floating-size - ($btn-floating-border * 2);
+		background-color: $btn-default-bg;
+		border: $btn-floating-border solid $btn-default-bg;
+		border-radius: $btn-floating-radius;
+		cursor: pointer;
+		outline: none !important;
+		vertical-align: middle;
+		@extend .--z__depth__1;
+		@include transition(0.3s);
+
+		i,
+		.icon {
+			width: $btn-floating-size - ($btn-floating-border * 2);
+			display: inline-block;
+			text-align: center;
+			color: $btn-default-color;
+			font-size: inherit;
+			line-height: inherit;
+		}
+
+		&:hover {
+			@extend .--z__depth__1__half;
+		}
+
+		&:before {
+			border-radius: 0;
+		}
+
+		// Flat button
+		&--flat {
+			box-shadow: none;
+			background-color: transparent;
+			color: $btn-flat-color;
+			cursor: pointer;
+			border-color: transparent;
+		}
+		&.btn {
+			&--lg {
+				@include btn__floating__size($btn-floating-lg-size, $btn-floating-lg-font-size);
+			}
+			&--sm {
+				@include btn__floating__size($btn-floating-sm-size, $btn-floating-sm-font-size);
+			}
+			&--xs {
+				@include btn__floating__size($btn-floating-xs-size, $btn-floating-xs-font-size);
+			}
+		}
+	}
+
+}
+
+
+
+
+// Btn Icon styles
+.btn,
+.btn__floating {
+	i,
+	.icon {
+		font-size: inherit;
+		line-height: inherit;
+		color: inherit;
+		&.icon--left {
+			margin-right: 0.5em;
+		}
+		&.icon--right {
+			margin-left: 0.5em;
+		}
+	}
+}
+
+
+// Disabled btns
+.btn,
+.btn__floating {
+	&--disabled,
+	&:disabled {
+		background-color: $btn-disabled-background !important;
+		box-shadow: none !important;
+		color: $btn-disabled-color !important;
+		cursor: default !important;
+
+		* {
+			pointer-events: none;
+		}
+
+		&:hover {
+			background-color: $btn-disabled-background !important;
+			color: $btn-disabled-color !important;
+		}
+	}
+}
+
+// Button colors
+// --------------------------------------------------
+@include button-variant('.btn--primary',$btn-primary-color, $btn-primary-bg, $btn-primary-border);
+@include button-variant('.btn--success',$btn-success-color, $btn-success-bg, $btn-success-border);
+@include button-variant('.btn--info',$btn-info-color, $btn-info-bg, $btn-info-border);
+@include button-variant('.btn--warning',$btn-warning-color, $btn-warning-bg, $btn-warning-border);
+@include button-variant('.btn--danger',$btn-danger-color, $btn-danger-bg, $btn-danger-border);
+
+
+
+// Block button
+// --------------------------------------------------
+.btn--block {
+	display: block;
+	width: 100%;
+}
+// Vertically space out multiple block buttons
+.btn--block + .btn--block {
+	margin-top: 5px;
+}
+
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	&.btn-block {
+		width: 100%;
+	}
+}
+
+
+
