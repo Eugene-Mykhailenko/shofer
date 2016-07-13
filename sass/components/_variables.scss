@@ -7,12 +7,12 @@
 $color-white:             #fff !default;
 $color-black:             #000 !default;
 $color-gray-darker:       #616161 !default;
-$color-gray-dark:         #757575 !default;
+$color-gray-dark:         #9297A3 !default;
 $color-gray:              #9e9e9e !default;
 $color-gray-light:        #bdbdbd !default;
 $color-gray-lighter:      #e0e0e0 !default;
 
-$color-primary:           #2196f3 !default;
+$color-primary:           #2182E2 !default;
 $color-primary-light:     lighten($color-primary, 20%) !default;
 $color-primary-dark:      darken($color-primary, 20%) !default;
 $color-success:           rgba(76, 175, 80, 0.70) !default;
@@ -34,6 +34,10 @@ $link-hover-color:        inherit !default;
 $link-hover-decoration:   none !default;
 
 
+$h2-color: #333743 !default;
+$dark-blue: #333743 !default;
+$light-blue: #2588DF !default;
+
 
 
 /* =======================================================================
@@ -46,12 +50,12 @@ $font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
-$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h1:            52px !default; // ~52px
+$font-size-h2:            36px !default; // ~36px
+$font-size-h3:            24px !default; // ~24px
+$font-size-h4:            18px !default; // ~18px
 $font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h6:            12px !default; // ~12px
 
 $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
@@ -69,12 +73,13 @@ $headings-color:          inherit !default;
 	Buttons
 ========================================================================== */
 // General btn styles
-$btn-height: 35px !default;
-$btn-padding: 0 12px !default;
+$btn-height: 55px !default;
+$btn-padding: 0 40px !default;
 $btn-font-size: 1em !default;
-$btn-font-weight: 300 !default;
+$btn-font-weight: 400 !default;
 $btn-border: 1px !default;
-$btn-border-radius: 2px !default;
+$btn-border-radius: $btn-height !default;
+
 
 // Buttons sizes
 //--------------
@@ -161,13 +166,72 @@ $btn-danger-border:              $btn-danger-bg !default;
 
 
 
+/* =======================================================================
+    Media queries breakpoints
+========================================================================== */
+// Extra small screen / phone
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+
+/* =======================================================================
+    Grid system
+======================================================================= */
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns.
+$grid-gutter-width:         30px !default;
+
+
+//== Container sizes
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+$container-lg:                 $container-large-desktop !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //** Horizontal line color.
 $hr-border:                   $color-gray-lighter !default;
-
-
-
-
-
 
 
 

@@ -51,19 +51,56 @@ a {
 	}
 }
 
+//images
+img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+.responsive__img {
+	display: block;
+	width: 100%;
+}
+
+
+
 // Horizontal rules
 hr {
-	margin-top:    $line-height-computed;
-	margin-bottom: $line-height-computed;
+	margin-top:    20px;
+	margin-bottom: 20px;
 	border: 0;
 	border-top: 1px solid $hr-border;
 }
 
 .theme__section {
-	max-width: 1170px;
+	position: relative;
 	margin: auto;
 	padding: 20px 0;
+	background-color: $body-bg;
+	&__wrap {
+		position: relative;
+		z-index: 1;
+	}
 }
 
+.theme__section__patern {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 0;
+	background-position: center;
+	background-size: cover;
+}
 
-
+.content__image {
+	font-size: 0;
+	letter-spacing: 0;
+	line-height: 0;
+	&--small {
+		display: inline-block;
+		width: calc(50% - 60px);
+		margin: 0 15px;
+	}
+}

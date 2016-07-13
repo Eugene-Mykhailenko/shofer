@@ -10,8 +10,8 @@
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700%7Csubset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="./css/style.min.css" rel="stylesheet" type="text/css" />
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -21,154 +21,352 @@
     </head>
     <body>
         <main class="main__theme__wrap">
-			<!-- main section -->
-            <section class="theme__section">
+			<header class="main__header">
+				<div class="main__header__wrap">
+					<div class="main__header__widget main__header__widget--left">
+						<a class="main__header__tell" href="">
+							<i class="fa fa-phone"></i>888-592-0055
+						</a>
+					</div>
+					<div class="main__header__widget main__header__widget--center">
+						<a class="main__logo" href="#!"></a><img src="./images/main-logo.png" alt="">
+					</div>
+					<div class="main__header__widget main__header__widget--right">
+						<a class="btn btn--primary btn--inverse" href="#!">CONTACT US</a>
+					</div>
+				</div>
+			</header>
 
-				<hr>
-				<h3>Flat Btn</h3>
-				<hr>
-				<a class="btn btn--flat">Button</a>
-				<a class="btn__floating btn--flat"><i class="material-icons">add</i></a>
-
-				<hr>
-				<h3>Buttons Size</h3>
-				<hr>
-				<a class="btn btn--xs"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--sm "><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--lg "><i class="material-icons icon--left">cloud</i>button</a>
-
-				<br><br>
-				<a class="btn btn--xs btn--flat"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--sm  btn--flat"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--flat"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--lg btn--flat"><i class="material-icons icon--left">cloud</i>button</a>
-
-				<br><br>
-
-				<a class="btn__floating btn--xs"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--sm"><i class="material-icons">add</i></a>
-				<a class="btn__floating"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--lg"><i class="material-icons">add</i></a>
-
-				<br><br>
-				<a class="btn__floating btn--xs btn--flat"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--sm btn--flat"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--flat"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--lg btn--flat"><i class="material-icons">add</i></a>
-
-				<br><br>
-
-				<hr>
-				<h3>Disabled</h3>
-				<hr>
-				<a class="btn btn--xs btn--disabled">Button disabled</a>
-				<a class="btn btn--sm btn--disabled">Button disabled</a>
-				<a class="btn btn--disabled">Button disabled</a>
-				<a class="btn btn--lg btn--disabled">Button disabled</a>
-
-				<br><br>
-				<a class="btn__floating btn--xs btn--disabled"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--sm btn--disabled"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--disabled"><i class="material-icons">add</i></a>
-				<a class="btn__floating btn--lg btn--disabled"><i class="material-icons">add</i></a>
-
-
-
-				<br><br>
-
-				<hr>
-				<h3>Buttons Colors</h3>
-				<hr>
-				<a class="btn"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--primary"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--success"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--info"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--warning"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--danger"><i class="material-icons icon--left">cloud</i>button</a>
-
-				<br><br>
-
-				<a class="btn__floating"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--primary"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--success "><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--info "><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--warning "><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--danger "><i class="material-icons">cloud</i>button</a>
-
-				<hr>
-				<h3>Buttons block</h3>
-				<hr>
-
-				<a class="btn btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--primary btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--success btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--info btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--warning btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--danger btn--block"><i class="material-icons icon--left">cloud</i>button</a>
-
-				<br><br>
-
-				<a class="btn__floating btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--primary btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--success  btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--info  btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--warning  btn--block"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--danger  btn--block"><i class="material-icons">cloud</i>button</a>
-
-
-				<hr>
-				<h3>Buttons Inverse</h3>
-				<hr>
-				<a class="btn btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--primary btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--success btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--info btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--warning btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-				<a class="btn btn--danger btn--inverse"><i class="material-icons icon--left">cloud</i>button</a>
-
-				<br><br>
-
-				<a class="btn__floating btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--primary btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--success  btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--info  btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--warning  btn--inverse"><i class="material-icons">cloud</i>button</a>
-				<a class="btn__floating btn--danger  btn--inverse"><i class="material-icons">cloud</i>button</a>
-
-
-				<hr>
-				<h3>Use tag 'buttons' instead tag 'a'</h3>
-				<hr>
-				<button class="btn btn--inverse"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--primary"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--success"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--info"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--warning"><i class="material-icons icon--left">cloud</i>button</button>
-				<button class="btn btn--danger"><i class="material-icons icon--left">cloud</i>button</button>
-
-				<br><br>
-
-				<button class="btn__floating"><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--primary"><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--success "><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--info "><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--warning "><i class="material-icons">cloud</i>button</button>
-				<button class="btn__floating btn--danger "><i class="material-icons">cloud</i>button</button>
-
-
-				<hr>
-				<h3>Use tag 'input' instead tag 'a'</h3>
-				<hr>
-				<input type='submit' class="btn">
-				<input type='submit' class="btn btn--primary">
-				<input type='submit' class="btn btn--success">
-				<input type='submit' class="btn btn--info">
-				<input type='submit' class="btn btn--warning">
-				<input type='submit' class="btn btn--danger">
-
-
+			<section class="theme__section theme__section--main">
+				<div class="theme__section__wrap">
+					<h1>Airport Transportation (SFO, OAK, SJC)</h1>
+					<h4>MyShofer.com offers full-service airport transportation to and from any Bay Area airport (SFO, Oakland Airport, San Jose Airport). </h4>
+					<a class="btn btn--primary" href="#!">PRICE CHECK</a>
+				</div>
+				<div class="theme__section__patern theme__section__patern--img" style="background-image: url('./images/main-section-bg.jpg')"></div>
 			</section>
+
+
+			<section class="theme__section">
+				<div class="theme__section__wrap">
+					<div class="container">
+						<div class="container__row text__center padding__top__30 padding__bottom__30">
+							<div class="col__md__4">
+								<div class="col__icon margin__bottom__15">
+									<svg width="122px" height="122px" viewBox="189 755 122 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(190.000000, 756.000000)">
+											<circle stroke-opacity="0.300000012" stroke="#9297A3" cx="60" cy="60" r="60"></circle>
+											<path d="M38.851821,60.2691917 L80.9734039,60.2691917 C81.4831282,60.2691917 81.8961489,59.8539102 81.8961489,59.341672 C81.8961489,58.8294338 81.4831282,58.4141523 80.9734039,58.4141523 L38.851821,58.4141523 C38.3420967,58.4141523 37.9290761,58.8294338 37.9290761,59.341672 C37.9290761,59.8539102 38.3422198,60.2691917 38.851821,60.2691917 L38.851821,60.2691917 Z" fill="#000000"></path>
+											<path d="M88.0219448,62.7471532 L85.6363416,58.9715298 L84.7427554,55.363602 L86.6722765,55.363602 C87.1820008,55.363602 87.5950215,54.9483205 87.5950215,54.4360823 C87.5950215,53.9238441 87.1820008,53.5085627 86.6722765,53.5085627 L84.2833515,53.5085627 L81.8760945,43.7887749 C81.2785249,41.3754924 78.8721292,39.4850837 76.3981886,39.4850837 L70.1187249,39.4850837 L68.9009477,34.5684875 C68.5532574,33.1645937 67.1535149,32.0649264 65.7142789,32.0649264 L54.1114382,32.0649264 C52.6722022,32.0649264 51.2724597,33.1645937 50.9246464,34.5684875 L49.7069922,39.4850837 L43.4275285,39.4850837 C40.9535879,39.4850837 38.5471922,41.3754924 37.9496226,43.7887749 L35.5419965,53.5085627 L33.1530715,53.5085627 C32.6433472,53.5085627 32.2303266,53.9238441 32.2303266,54.4360823 C32.2303266,54.9483205 32.6433472,55.363602 33.1530715,55.363602 L35.0825926,55.363602 L34.1890064,58.9715298 L31.8034032,62.7471532 C31.3454757,63.4719789 31,64.6662532 31,65.5251364 L31,78.9603206 C31,79.4725588 31.4130206,79.8878403 31.9227449,79.8878403 L32.2303266,79.8878403 L32.2303266,86.6587338 C32.2303266,87.170972 32.6433472,87.5862535 33.1530715,87.5862535 L42.8617013,87.5862535 C43.3714256,87.5862535 43.7844462,87.170972 43.7844462,86.6587338 L43.7844462,82.6703993 C43.7844462,82.1581611 43.3714256,81.7428796 42.8617013,81.7428796 C42.351977,81.7428796 41.9389564,82.1581611 41.9389564,82.6703993 L41.9389564,85.7312142 L34.0758164,85.7312142 L34.0758164,79.8878403 L47.234528,79.8878403 L72.6048458,79.8878403 L85.7495316,79.8878403 L85.7495316,85.7312142 L77.8863916,85.7312142 L77.8863916,82.6703993 C77.8863916,82.1581611 77.473371,81.7428796 76.9636467,81.7428796 C76.4539224,81.7428796 76.0409018,82.1581611 76.0409018,82.6703993 L76.0409018,86.6587338 C76.0409018,87.170972 76.4539224,87.5862535 76.9636467,87.5862535 L86.6722765,87.5862535 C87.1820008,87.5862535 87.5950215,87.170972 87.5950215,86.6587338 L87.5950215,79.8878403 L87.9026031,79.8878403 C88.4123274,79.8878403 88.825348,79.4725588 88.825348,78.9603206 L88.825348,65.5251364 C88.825348,64.6662532 88.4798723,63.4719789 88.0219448,62.7471532 L88.0219448,62.7471532 Z M52.7152637,35.016665 C52.8574894,34.4427158 53.52285,33.9199657 54.1113152,33.9199657 L65.7141558,33.9199657 C66.302498,33.9199657 66.9678586,34.4427158 67.1100843,35.016665 L68.2167631,39.4850837 L51.608708,39.4850837 L52.7152637,35.016665 L52.7152637,35.016665 Z M32.8454898,65.5251364 C32.8454898,65.018958 33.0913091,64.168979 33.3612427,63.7417016 L35.8270632,59.8389462 C35.8803363,59.7547274 35.9195838,59.6624701 35.9435751,59.5657608 L39.7399938,44.2369524 C40.1289,42.6667235 41.8174002,41.340123 43.4271594,41.340123 L69.3936935,41.340123 L76.3979425,41.340123 C78.0077018,41.340123 79.6962019,42.6667235 80.0851082,44.2369524 L83.8815268,59.5657608 C83.9055182,59.6624701 83.9448886,59.7547274 83.9980387,59.8389462 L86.4638592,63.7418253 C86.7337929,64.168979 86.9796121,65.018958 86.9796121,65.5251364 L86.9796121,78.0328009 L73.2328044,78.0328009 L71.0040679,72.4271194 C70.8639337,72.0747856 70.5246096,71.8437714 70.1471454,71.8437714 L49.6780795,71.8437714 C49.3007384,71.8437714 48.9612913,72.0747856 48.8211571,72.4271194 L46.5924205,78.0328009 L32.8454898,78.0328009 L32.8454898,65.5251364 L32.8454898,65.5251364 Z M71.2453349,78.0328009 L48.5800131,78.0328009 L50.3030854,73.6988107 L69.5223856,73.6988107 L71.2453349,78.0328009 L71.2453349,78.0328009 Z" fill="#000000"></path>
+											<path d="M35.6137246,73.3897612 L39.0858291,73.3897612 C41.8364702,73.3897612 44.0744342,71.1403405 44.0744342,68.3753425 C44.0744342,65.6104682 41.8365932,63.3609239 39.0858291,63.3609239 L36.2950794,63.3609239 C35.7853551,63.3609239 35.3723345,63.7762054 35.3723345,64.2884436 C35.3723345,64.8006817 35.7853551,65.2159632 36.2950794,65.2159632 L39.0858291,65.2159632 C40.8189902,65.2159632 42.2289444,66.6332133 42.2289444,68.3753425 C42.2289444,70.1174718 40.8189902,71.5347218 39.0858291,71.5347218 L35.6137246,71.5347218 C35.1040003,71.5347218 34.6909797,71.9500033 34.6909797,72.4622415 C34.6909797,72.9744797 35.1040003,73.3897612 35.6137246,73.3897612 L35.6137246,73.3897612 Z" fill="#000000"></path>
+											<path d="M75.7509138,68.3753425 C75.7509138,71.1403405 77.9887548,73.3897612 80.7395189,73.3897612 L84.2116234,73.3897612 C84.7213477,73.3897612 85.1343683,72.9744797 85.1343683,72.4622415 C85.1343683,71.9500033 84.7213477,71.5347218 84.2116234,71.5347218 L80.7395189,71.5347218 C79.0063578,71.5347218 77.5964036,70.1174718 77.5964036,68.3753425 C77.5964036,66.6333369 79.0064809,65.2159632 80.7396419,65.2159632 L83.5302686,65.2159632 C84.0399929,65.2159632 84.4530135,64.8006817 84.4530135,64.2884436 C84.4530135,63.7762054 84.0399929,63.3609239 83.5302686,63.3609239 L80.7396419,63.3609239 C77.9888778,63.3609239 75.7509138,65.6103446 75.7509138,68.3753425 L75.7509138,68.3753425 Z" fill="#000000"></path>
+											<path d="M64.674776,35.775005 L55.150449,35.775005 C54.6407247,35.775005 54.2277041,36.1902865 54.2277041,36.7025247 C54.2277041,37.2147629 54.6407247,37.6300444 55.150449,37.6300444 L64.674776,37.6300444 C65.1845003,37.6300444 65.5975209,37.2147629 65.5975209,36.7025247 C65.5975209,36.1902865 65.1845003,35.775005 64.674776,35.775005 L64.674776,35.775005 Z" fill="#000000"></path>
+										</g>
+									</svg>
+								</div>
+								<p>Our fuel-efficient vehicles are comfortable and spacious.</p>
+							</div>
+							<div class="col__md__4">
+								<div class="col__icon margin__bottom__15">
+									<svg width="122px" height="122px" viewBox="587 755 122 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(588.000000, 756.000000)">
+											<circle stroke-opacity="0.300000012" stroke="#9297A3" cx="60" cy="60" r="60"></circle>
+											<g transform="translate(31.000000, 31.000000)" fill="#000000">
+												<path d="M57.2324667,0.283233333 C56.8545,-0.0947333333 56.2435667,-0.0947333333 55.8656,0.283233333 L52.2812,3.86666667 L29.7752667,3.86666667 L1.48093333,32.3939667 C0.836166667,33.0377667 0.4814,33.8952 0.4814,34.8058 C0.4814,35.7164 0.836166667,36.5738333 1.48093333,37.2176333 L21.2647333,57.0014333 C21.9288333,57.6655333 22.7998,57.9971 23.6727,57.9971 C24.5485,57.9971 25.4262333,57.6626333 26.0971,56.9917667 L53.6480667,28.6964667 L53.6480667,5.23353333 L57.2315,1.6501 C57.6094667,1.27213333 57.6094667,0.6612 57.2324667,0.283233333 L57.2324667,0.283233333 Z M22.6316,55.6345667 L2.8478,35.8507667 C2.56843333,35.5714 2.41473333,35.2002 2.41473333,34.8058 C2.41473333,34.4114 2.56843333,34.0402 2.8507,33.7579333 L11.4057,25.1323667 L33.1992,46.9268333 L24.7205667,55.6345667 C24.1454,56.2097333 23.2077333,56.2097333 22.6316,55.6345667 L22.6316,55.6345667 Z M51.7157,27.9115333 L34.5486667,45.5416 L12.7677333,23.7597 L30.5805,5.8 L50.3488333,5.8 L45.6769333,10.4719 C44.9123,9.96536667 43.9988,9.66666667 43.0157,9.66666667 C40.3506,9.66666667 38.1823667,11.8349 38.1823667,14.5 C38.1823667,17.1651 40.3506,19.3333333 43.0157,19.3333333 C45.6808,19.3333333 47.8490333,17.1651 47.8490333,14.5 C47.8490333,13.5169 47.5503333,12.6034 47.0438,11.8387667 L51.7157,7.16686667 L51.7157,27.9115333 L51.7157,27.9115333 Z M45.9157,14.5 C45.9157,16.0988667 44.6145667,17.4 43.0157,17.4 C41.4168333,17.4 40.1157,16.0988667 40.1157,14.5 C40.1157,12.9011333 41.4168333,11.6 43.0157,11.6 C43.4623,11.6 43.8799,11.7102 44.2578667,11.8909667 L42.3322667,13.8165667 C41.9543,14.1945333 41.9543,14.8054667 42.3322667,15.1834333 C42.5207667,15.3719333 42.7682333,15.4666667 43.0157,15.4666667 C43.2631667,15.4666667 43.5106333,15.3719333 43.6991333,15.1834333 L45.6247333,13.2578333 C45.8055,13.6358 45.9157,14.0534 45.9157,14.5 L45.9157,14.5 Z"></path>
+											</g>
+										</g>
+									</svg>
+								</div>
+								<p>Our service is reasonably priced and a more cost-effective alternative to taxis or limos.</p>
+							</div>
+							<div class="col__md__4">
+								<div class="col__icon margin__bottom__15">
+									<svg width="122px" height="122px" viewBox="988 755 122 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(989.000000, 756.000000)">
+											<g transform="translate(33.000000, 25.000000)" fill="#000000">
+												<path d="M34.527027,17.0064795 L35.8424324,17.0064795 C35.8886486,17.1419957 35.9436486,17.2733607 36.0071622,17.4000389 L34.2355405,19.1555896 C33.8397297,19.5479438 33.8397297,20.1837451 34.2355405,20.5759654 C34.4333784,20.7720086 34.6928378,20.8700302 34.9521622,20.8700302 C35.2114865,20.8700302 35.4709459,20.7720086 35.6687838,20.5759654 L37.4405405,18.8202808 C37.8658108,19.0302505 38.3447297,19.1488942 38.8512162,19.1488942 C40.247973,19.1488942 41.4360811,18.2503629 41.8601351,17.0063456 L46.4189189,17.0063456 C46.9786486,17.0063456 47.4324324,16.5568121 47.4324324,16.0020259 C47.4324324,15.4472397 46.9786486,14.9977063 46.4189189,14.9977063 L41.8602703,14.9977063 C41.8140541,14.8621901 41.7590541,14.7306911 41.6954054,14.6041469 L47.1356757,9.21336069 C47.5314865,8.82100648 47.5314865,8.18520518 47.1356757,7.79298488 C46.7398649,7.40089849 46.0981081,7.40089849 45.7024324,7.79298488 L40.2621622,13.183905 C39.8366216,12.9740691 39.3578378,12.8552916 38.8513514,12.8552916 C37.4545946,12.8552916 36.2664865,13.7538229 35.8424324,14.9978402 L34.527027,14.9978402 C33.9672973,14.9978402 33.5135135,15.4473737 33.5135135,16.0021598 C33.5135135,16.556946 33.9672973,17.0064795 34.527027,17.0064795 L34.527027,17.0064795 Z M38.8513514,14.8639309 C39.4847297,14.8639309 40,15.374527 40,16.0021598 C40,16.6297927 39.4847297,17.1403888 38.8513514,17.1403888 C38.217973,17.1403888 37.7027027,16.6297927 37.7027027,16.0021598 C37.7027027,15.374527 38.217973,14.8639309 38.8513514,14.8639309 L38.8513514,14.8639309 Z"></path>
+												<path d="M33.377973,33.1809806 L33.5087838,31.107797 C35.217027,31.7027559 37.0071622,32.0043197 38.8513514,32.0043197 C47.7558108,32.0043197 55,24.8258445 55,16.0021598 C55,7.17847516 47.7558108,0 38.8513514,0 C30.2874324,0 23.2604054,6.64042765 22.7354054,14.9978402 L17.7174324,14.9978402 C15.3235135,14.9978402 13.1024324,15.9499352 11.4633784,17.678838 C9.82432432,19.4077408 9.00378378,21.6638445 9.15310811,24.0313607 L9.73013514,33.1808467 C9.74094595,37.1402765 11.4239189,40.6820432 14.0540541,43.0217063 L14.0540541,44.622324 L12.2725676,47.2702462 L3.93337838,49.5240734 C1.61743243,50.1500994 0,52.2484579 0,54.6270886 L0,58.8531317 C0,60.5883283 1.42459459,62 3.17567568,62 L39.9324324,62 C41.6835135,62 43.1081081,60.5883283 43.1081081,58.8531317 L43.1081081,54.6270886 C43.1081081,52.248324 41.4906757,50.1499654 39.1748649,49.5242073 L30.8355405,47.2703801 L29.0540541,44.6224579 L29.0540541,43.0218402 C31.6841892,40.6820432 33.367027,37.1404104 33.377973,33.1809806 L33.377973,33.1809806 Z M24.432973,51.715365 C24.4328378,51.715365 24.4328378,51.7152311 24.432973,51.715365 L23.0555405,50.3504276 L27.822973,46.4136285 L28.9847297,48.1405227 L25.7667568,52.9238963 C25.7613514,52.931797 25.7490541,52.9501425 25.7171622,52.9533564 C25.6852703,52.9565702 25.6693243,52.940635 25.6627027,52.9339395 L24.432973,51.715365 L24.432973,51.715365 Z M18.6748649,51.7157667 L17.4455405,52.9339395 C17.4387838,52.940635 17.4227027,52.9560346 17.3910811,52.9532225 C17.3593243,52.9501425 17.3468919,52.9316631 17.3414865,52.9237624 L14.1235135,48.1403888 L15.2852703,46.4134946 L20.0527027,50.3502937 L18.6756757,51.7148294 C18.6754054,51.7152311 18.6751351,51.7154989 18.6748649,51.7157667 L18.6748649,51.7157667 Z M21.5540541,48.975581 L16.157973,44.5196156 C17.7767568,45.4213607 19.6113514,45.9308855 21.5540541,45.9308855 C23.4967568,45.9308855 25.3313514,45.4213607 26.9501351,44.5197495 L21.5540541,48.975581 L21.5540541,48.975581 Z M21.5540541,56.6436285 C21.6390541,56.6436285 21.7228378,56.6393434 21.8062162,56.6327819 L22.5013514,59.9913607 L20.6067568,59.9913607 L21.302027,56.6327819 C21.3852703,56.6393434 21.4690541,56.6436285 21.5540541,56.6436285 L21.5540541,56.6436285 Z M22.7027027,53.4967603 C22.7027027,54.1243931 22.1874324,54.6349892 21.5540541,54.6349892 C20.9206757,54.6349892 20.4054054,54.1243931 20.4054054,53.4967603 L20.4054054,52.8415421 L21.5540541,51.7033132 L22.7027027,52.8415421 L22.7027027,53.4967603 L22.7027027,53.4967603 Z M37.8378378,2.04506263 L37.8378378,4.21814255 C37.8378378,4.77292873 38.2916216,5.2224622 38.8513514,5.2224622 C39.4110811,5.2224622 39.8648649,4.77292873 39.8648649,4.21814255 L39.8648649,2.04506263 C46.8459459,2.53811663 52.4395946,8.0815594 52.9363514,14.9994471 C52.9259459,14.9991793 52.9158108,14.9978402 52.9054054,14.9978402 L50.7432432,14.9978402 C50.1835135,14.9978402 49.7297297,15.4473737 49.7297297,16.0021598 C49.7297297,16.556946 50.1835135,17.0064795 50.7432432,17.0064795 L52.9054054,17.0064795 C52.9158108,17.0064795 52.9259459,17.0052743 52.9363514,17.0048726 C52.4395946,23.9227603 46.8459459,29.466203 39.8648649,29.959257 L39.8648649,27.7861771 C39.8648649,27.2313909 39.4110811,26.7818575 38.8513514,26.7818575 C38.2916216,26.7818575 37.8378378,27.2313909 37.8378378,27.7861771 L37.8378378,29.9593909 C36.3887838,29.8588251 34.9836486,29.541594 33.6409459,29.0117149 L33.9551351,24.0313607 C34.1044595,21.6637106 33.2839189,19.4077408 31.6448649,17.678838 C30.0058108,15.9499352 27.7844595,14.9978402 25.3906757,14.9978402 L24.7664865,14.9978402 C25.2639189,8.08062203 30.8572973,2.53798272 37.8378378,2.04506263 L37.8378378,2.04506263 Z M12.9406757,19.0542203 C14.1925676,17.7337408 15.8890541,17.0064795 17.7174324,17.0064795 L25.3905405,17.0064795 C27.2189189,17.0064795 28.9154054,17.7337408 30.1672973,19.0542203 C31.4191892,20.3746998 32.0458108,22.0978445 31.9318919,23.9061555 L31.7412162,26.9288898 C30.8831081,25.2017279 29.9945946,24.0491706 29.922973,23.9575767 C29.6448649,23.6017797 29.1621622,23.4722894 28.7409459,23.6415508 C23.6502703,25.6850065 14.0824324,25.7105832 13.9863514,25.7105832 C13.7593243,25.7105832 13.5387838,25.786108 13.3602703,25.9252397 C13.2895946,25.9802765 12.3531081,26.7256156 11.4427027,28.1323326 L11.1762162,23.9062894 C11.0621622,22.0978445 11.6887838,20.3746998 12.9406757,19.0542203 L12.9406757,19.0542203 Z M11.7578378,33.187676 C12.0622973,30.1948035 13.7498649,28.3187343 14.3775676,27.7161425 C16.2009459,27.6932441 23.7821622,27.4945227 28.7436486,25.7850367 C29.5774324,27.030527 31.3513514,30.0446911 31.3513514,33.1424147 C31.3513514,39.0863801 26.9563514,43.9221123 21.5540541,43.9221123 C16.1655405,43.9222462 11.7801351,39.1108855 11.7578378,33.187676 L11.7578378,33.187676 Z M2.02702703,58.8531317 L2.02702703,54.6270886 C2.02702703,53.151676 3.03027027,51.8502117 4.46675676,51.4618747 L12.4672973,49.2996415 L15.655,54.0377538 C16.0044595,54.5571879 16.5644595,54.8903542 17.1914865,54.9519525 C17.2612162,54.9587819 17.3308108,54.9621296 17.4,54.9621296 C17.8237838,54.9621296 18.2332432,54.834514 18.5798649,54.5988337 C18.7562162,55.0644363 19.0406757,55.4778143 19.4031081,55.8091058 L18.5374324,59.9913607 L9.59459459,59.9913607 L9.59459459,56.7105832 C9.59459459,56.155797 9.14081081,55.7062635 8.58108108,55.7062635 C8.02135135,55.7062635 7.56756757,56.155797 7.56756757,56.7105832 L7.56756757,59.9913607 L3.17567568,59.9913607 C2.5422973,59.9913607 2.02702703,59.4807646 2.02702703,58.8531317 L2.02702703,58.8531317 Z M41.0810811,54.6270886 L41.0810811,58.8531317 C41.0810811,59.4807646 40.5658108,59.9913607 39.9324324,59.9913607 L35.5405405,59.9913607 L35.5405405,56.7105832 C35.5405405,56.155797 35.0867568,55.7062635 34.527027,55.7062635 C33.9672973,55.7062635 33.5135135,56.155797 33.5135135,56.7105832 L33.5135135,59.9913607 L24.5706757,59.9913607 L23.705,55.8093737 C24.0674324,55.4780821 24.3518919,55.0647041 24.5282432,54.5991015 C24.8748649,54.8347819 25.2843243,54.9623974 25.7081081,54.9623974 C25.7772973,54.9623974 25.847027,54.9590497 25.9166216,54.9522203 C26.5436486,54.890622 27.1036486,54.5574557 27.4531081,54.0380216 L30.6408108,49.2999093 L38.6414865,51.4621425 C40.0778378,51.8502117 41.0810811,53.1518099 41.0810811,54.6270886 L41.0810811,54.6270886 Z"></path>
+											</g>
+											<circle stroke-opacity="0.300000012" stroke="#9297A3" cx="60" cy="60" r="60"></circle>
+										</g>
+									</svg>
+								</div>
+								<p>Our drivers are consistently gracious and punctual. </p>
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="theme__section">
+				<div class="theme__section__wrap">
+					<div class="container">
+						<div class="container__row">
+							<div class="col__md__5">
+								<h2 class="margin__bottom__15">Take away from any place</h2>
+								<p>They will pick up you at your home, apartment, hotel, workplace, or any other location. My Shofer, San Francisco’s brand new transportation asset, can also arrange for service to and from airports outside the Bay Area, with advance reservations. </p>
+							</div>
+							<div class="col__md__7">
+								<img class="content__image" src="./images/content-img-1.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="theme__section padding__bottom__70">
+				<div class="theme__section__wrap">
+					<div class="container">
+						<div class="container__row">
+							<div class="col__md__5 pull__right__md">
+								<h2 class="margin__bottom__15">Always there for you</h2>
+								<p>All your airport transport needs can be done with a few clicks on your computer screen, through our convenient on-line reservation system. Our Bay Area drivers will be waiting at your door, or waiting at the airport for you (either curbside or at your arrival gate).</p>
+							</div>
+							<div class="col__md__7">
+								<img class="content__image" src="./images/content-img-2.jpg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="theme__section main__section padding__top__125 padding__bottom__125">
+				<div class="theme__section__wrap">
+					<div class="container">
+						<div class="container__row">
+							<div class="col__md__8 col__md__offset__2 text__center text__white">
+								<h3>With My Shofer you never have to wonder if your driver will show up on time, as is the case with taxis. Using our superb San Francisco drivers, you can have your trip begin and end in style!</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="theme__section__patern theme__section__patern--img" style="background-image: url('./images/theme-section-bg.jpg')"></div>
+			</section>
+
+
+			<section class="theme__section main__section padding__top__120">
+				<div class="theme__section__wrap">
+					<div class="container">
+						<img class="content__image responsive__img" src="./images/content-img-3.jpg" alt="">
+						<div class="container__row padding__bottom__90">
+							<div class="col__md__8 col__md__offset__2 padding__top__10 margin__top__-80 text__center background__color__white">
+								<h2 class="margin__bottom__30">Who can benefit</h2>
+								<p>With MyShofer you no longer have to look for taxis during the often stressful hours before a trip, nor pay for pricey hotel and private shuttle services. San Francisco’s exciting new custom transportation company the pleasures and security of a private chauffeur, but without the exorbitant costs. You can reserve any vehicle in our fleet for your trip from San Francisco to SFO and back — including $38 Black Priuses FROM SF TO SFO, $48 Luxury Sedan, or luxury Mercedes SUV. In our ongoing efforts to accommodate your desires, our San Francisco drivers can also arrange many different transportation options, even a stretch limo.</p>
+								<p>Whether you’re a businessman needing the most reliable and comfortable way to get to the airport, a job hunter departing for an interview in another city, a couple leaving on an overseas holiday, or anyone traveling for any kind of personal or professional need, MyShofer’s Bay Area chauffeurs are the best answer to your airport transportation needs, 24/7.</p>
+								<p>In our ongoing efforts to accommodate your desires, our San Francisco drivers can also arrange many different transportation options, even a stretch limo.</p>
+							</div>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</section>
+
+
+			<section class="theme__section">
+				<div class="theme__section__wrap">
+					<div class="container">
+						<h2 class="text__center margin__bottom__50">About us</h2>
+						<div class="container__row padding__bottom__50">
+							<div class="col__md__6 pull__right__md">
+								<img class="content__image content__image--small" src="./images/content-img-4.jpg" alt="">
+								<img class="content__image content__image--small" src="./images/content-img-5.jpg" alt="">
+							</div>
+							<div class="col__md__6">
+								<p>MyShofer.com has just arrived on the San Francisco scene! Launched by
+									a visionary San Francisco entrepreneur with a passion to make all your transportation needs both affordable and comfortable, this fully licensed and bonded company represents a fabulous alternative to pricey taxis (that are often not particularly comfortable or even always clean) and a great option
+									to expensive private chauffeur or limo services.This high-concept company
+									is transforming private transport services from an unattainable luxury
+									or pipedream into an affordable reality. It offers the services of a Limo, Car Service, Super Concierge, Personal Assistant, Custom Delivery/Pick-up Service, and Private Chauffeur all in one unique and innovative package!
+								</p>
+							</div>
+						</div>
+						<div class="container__row">
+							<div class="col__md__6">
+								<img class="content__image content__image--small" src="./images/content-img-6.jpg" alt="">
+								<img class="content__image content__image--small" src="./images/content-img-7.jpg" alt="">
+							</div>
+							<div class="col__md__6">
+								<p>MyShofer.com has just arrived on the San Francisco scene! Launched by
+									a visionary San Francisco entrepreneur with a passion to make all your transportation needs both affordable and comfortable, this fully licensed and bonded company represents a fabulous alternative to pricey taxis (that are often not particularly comfortable or even always clean) and a great option
+									to expensive private chauffeur or limo services.This high-concept company
+									is transforming private transport services from an unattainable luxury
+									or pipedream into an affordable reality. It offers the services of a Limo, Car Service, Super Concierge, Personal Assistant, Custom Delivery/Pick-up Service, and Private Chauffeur all in one unique and innovative package!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<footer class="main__footer">
+				<div class="main__footer__widget main__footer__widget--left">
+					<div class="main__footer__social">
+
+					</div>
+				</div>
+				<div class="main__footer__widget main__footer__widget--center">
+					<a href="#!"><img class="responsive__img" src="./images/footer-img.jpg" alt=""></a>
+				</div>
+				<div class="main__footer__widget main__footer__widget--right">
+					<p>Customer Support 888-592-0055
+						Copyright 2016 My Shofer Dot Com,
+						In Parthership with Promograph</p>
+				</div>
+			</footer>
+
+
+            <!--<section class="theme__section">-->
+
+				<!--<hr>-->
+				<!--<h3>Flat Btn</h3>-->
+				<!--<hr>-->
+				<!--<a class="btn btn&#45;&#45;flat">Button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;flat"><i class="material-icons">add</i></a>-->
+
+				<!--<hr>-->
+				<!--<h3>Buttons Size</h3>-->
+				<!--<hr>-->
+				<!--<a class="btn btn&#45;&#45;xs"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;sm "><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;lg "><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+
+				<!--<br><br>-->
+				<!--<a class="btn btn&#45;&#45;xs btn&#45;&#45;flat"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;sm  btn&#45;&#45;flat"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;flat"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;lg btn&#45;&#45;flat"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+
+				<!--<br><br>-->
+
+				<!--<a class="btn__floating btn&#45;&#45;xs"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating btn&#45;&#45;sm"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating btn&#45;&#45;lg"><i class="material-icons">add</i></a>-->
+
+				<!--<br><br>-->
+				<!--<a class="btn__floating btn&#45;&#45;xs btn&#45;&#45;flat"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating btn&#45;&#45;sm btn&#45;&#45;flat"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating btn&#45;&#45;flat"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating btn&#45;&#45;lg btn&#45;&#45;flat"><i class="material-icons">add</i></a>-->
+
+				<!--<br><br>-->
+
+				<!--<hr>-->
+				<!--<h3>Disabled</h3>-->
+				<!--<hr>-->
+				<!--<a class="btn btn&#45;&#45;xs btn&#45;&#45;disabled">Button disabled</a>-->
+				<!--<a class="btn btn&#45;&#45;sm btn&#45;&#45;disabled">Button disabled</a>-->
+				<!--<a class="btn btn&#45;&#45;disabled">Button disabled</a>-->
+				<!--<a class="btn btn&#45;&#45;lg btn&#45;&#45;disabled">Button disabled</a>-->
+
+				<!--<br><br>-->
+				<!--<a class="btn__floating btn&#45;&#45;xs btn&#45;&#45;disabled"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating btn&#45;&#45;sm btn&#45;&#45;disabled"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating btn&#45;&#45;disabled"><i class="material-icons">add</i></a>-->
+				<!--<a class="btn__floating btn&#45;&#45;lg btn&#45;&#45;disabled"><i class="material-icons">add</i></a>-->
+
+
+
+				<!--<br><br>-->
+
+				<!--<hr>-->
+				<!--<h3>Buttons Colors</h3>-->
+				<!--<hr>-->
+				<!--<a class="btn"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;primary"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;success"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;info"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;warning"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;danger"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+
+				<!--<br><br>-->
+
+				<!--<a class="btn__floating"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;primary"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;success "><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;info "><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;warning "><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;danger "><i class="material-icons">cloud</i>button</a>-->
+
+				<!--<hr>-->
+				<!--<h3>Buttons block</h3>-->
+				<!--<hr>-->
+
+				<!--<a class="btn btn&#45;&#45;block"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;primary btn&#45;&#45;block"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;success btn&#45;&#45;block"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;info btn&#45;&#45;block"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;warning btn&#45;&#45;block"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;danger btn&#45;&#45;block"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+
+				<!--<br><br>-->
+
+				<!--<a class="btn__floating btn&#45;&#45;block"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;primary btn&#45;&#45;block"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;success  btn&#45;&#45;block"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;info  btn&#45;&#45;block"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;warning  btn&#45;&#45;block"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;danger  btn&#45;&#45;block"><i class="material-icons">cloud</i>button</a>-->
+
+
+				<!--<hr>-->
+				<!--<h3>Buttons Inverse</h3>-->
+				<!--<hr>-->
+				<!--<a class="btn btn&#45;&#45;inverse"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;primary btn&#45;&#45;inverse"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;success btn&#45;&#45;inverse"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;info btn&#45;&#45;inverse"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;warning btn&#45;&#45;inverse"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+				<!--<a class="btn btn&#45;&#45;danger btn&#45;&#45;inverse"><i class="material-icons icon&#45;&#45;left">cloud</i>button</a>-->
+
+				<!--<br><br>-->
+
+				<!--<a class="btn__floating btn&#45;&#45;inverse"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;primary btn&#45;&#45;inverse"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;success  btn&#45;&#45;inverse"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;info  btn&#45;&#45;inverse"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;warning  btn&#45;&#45;inverse"><i class="material-icons">cloud</i>button</a>-->
+				<!--<a class="btn__floating btn&#45;&#45;danger  btn&#45;&#45;inverse"><i class="material-icons">cloud</i>button</a>-->
+
+
+				<!--<hr>-->
+				<!--<h3>Use tag 'buttons' instead tag 'a'</h3>-->
+				<!--<hr>-->
+				<!--<button class="btn btn&#45;&#45;inverse"><i class="material-icons icon&#45;&#45;left">cloud</i>button</button>-->
+				<!--<button class="btn btn&#45;&#45;primary"><i class="material-icons icon&#45;&#45;left">cloud</i>button</button>-->
+				<!--<button class="btn btn&#45;&#45;success"><i class="material-icons icon&#45;&#45;left">cloud</i>button</button>-->
+				<!--<button class="btn btn&#45;&#45;info"><i class="material-icons icon&#45;&#45;left">cloud</i>button</button>-->
+				<!--<button class="btn btn&#45;&#45;warning"><i class="material-icons icon&#45;&#45;left">cloud</i>button</button>-->
+				<!--<button class="btn btn&#45;&#45;danger"><i class="material-icons icon&#45;&#45;left">cloud</i>button</button>-->
+
+				<!--<br><br>-->
+
+				<!--<button class="btn__floating"><i class="material-icons">cloud</i>button</button>-->
+				<!--<button class="btn__floating btn&#45;&#45;primary"><i class="material-icons">cloud</i>button</button>-->
+				<!--<button class="btn__floating btn&#45;&#45;success "><i class="material-icons">cloud</i>button</button>-->
+				<!--<button class="btn__floating btn&#45;&#45;info "><i class="material-icons">cloud</i>button</button>-->
+				<!--<button class="btn__floating btn&#45;&#45;warning "><i class="material-icons">cloud</i>button</button>-->
+				<!--<button class="btn__floating btn&#45;&#45;danger "><i class="material-icons">cloud</i>button</button>-->
+
+
+				<!--<hr>-->
+				<!--<h3>Use tag 'input' instead tag 'a'</h3>-->
+				<!--<hr>-->
+				<!--<input type='submit' class="btn">-->
+				<!--<input type='submit' class="btn btn&#45;&#45;primary">-->
+				<!--<input type='submit' class="btn btn&#45;&#45;success">-->
+				<!--<input type='submit' class="btn btn&#45;&#45;info">-->
+				<!--<input type='submit' class="btn btn&#45;&#45;warning">-->
+				<!--<input type='submit' class="btn btn&#45;&#45;danger">-->
+
+
+			<!--</section>-->
         </main>
     </body>
 </html>

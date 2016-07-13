@@ -10,9 +10,10 @@
 	padding: $btn-padding;
     margin-bottom: 0;
     color: $btn-default-color;
-	line-height: $btn-height - ($btn-border * 2);
+	line-height: $btn-height ; //- ($btn-border * 2)
     font-weight: $btn-font-weight;
     text-align: center;
+	letter-spacing: 1px;
     vertical-align: middle;
     border: $btn-border solid $btn-default-bg;
     border-radius: $btn-border-radius;
@@ -22,7 +23,6 @@
     cursor: pointer;
     outline: none !important;
     touch-action: manipulation;
-    @extend .--z__depth__1;
     @include transition(0.3s);
 
     &:hover {

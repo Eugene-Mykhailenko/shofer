@@ -15,11 +15,15 @@
 @import "components/global";
 @import "components/typography";
 
-@import "components/_helper.scss";
+@import "components/helper.scss";
 
 
 // Components
 @import "components/buttons";
+@import "components/grid/grid.scss";
 @import "components/icons/theme-icons";
 
 //sections
+@import "sections/main-header.scss";
+@import "sections/main-section.scss";
+@import "sections/main-footer.scss";
