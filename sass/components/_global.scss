@@ -99,8 +99,10 @@ hr {
 	letter-spacing: 0;
 	line-height: 0;
 	&--small {
-		display: inline-block;
-		width: calc(50% - 60px);
-		margin: 0 15px;
+		width: 100%;
+		display: block;
+		//display: inline-block;
+		//width: calc(50% - 60px);
+		margin: 0 0 20px 0;
 	}
 }

@@ -448,9 +448,9 @@ hr {
   letter-spacing: 0;
   line-height: 0; }
   .content__image--small {
-    display: inline-block;
-    width: calc(50% - 60px);
-    margin: 0 15px; }
+    width: 100%;
+    display: block;
+    margin: 0 0 20px 0; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -3199,9 +3199,27 @@ input[type="button"].btn-block {
 	main footer styles
 ======================================================================= */
 .main__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px; }
+  background-color: #333743; }
+  .main__footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1210px;
+    padding: 20px;
+    margin: 0 auto; }
+
+.main__footer__widget--left {
+  width: 270px; }
+.main__footer__widget--center {
+  padding: 0 20px; }
+.main__footer__widget--right {
+  max-width: 270px; }
+.main__footer__widget .main__footer__social {
+  text-align: left; }
+  .main__footer__widget .main__footer__social a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

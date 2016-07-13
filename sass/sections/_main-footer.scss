@@ -2,8 +2,34 @@
 	main footer styles
 ======================================================================= */
 .main__footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px;
+	background-color: $h2-color;
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 1210px;
+		padding: 20px;
+		margin: 0 auto;
+	}
+}
+.main__footer__widget {
+	&--left {
+		width: 270px;
+	}
+	&--center {
+		padding:0 20px;
+	}
+	&--right {
+		max-width: 270px;
+	}
+
+	.main__footer__social {
+		text-align: left;
+		a {
+			display: inline-block;
+			margin-right: 20px;
+			color: $color-white;
+			font-size: 20px;
+		}
+	}
 }
