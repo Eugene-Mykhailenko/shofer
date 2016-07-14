@@ -3227,7 +3227,8 @@ input[type="button"].btn-block {
 ======================================================================= */
 @media (min-width: 768px) and (max-width: 1024px) {
   .main__header__widget--center {
-    max-width: 200px; } }
+    max-width: 200px;
+    margin: auto; } }
 @media (max-width: 767px) {
   h2 {
     font-size: 30px; }
@@ -3242,6 +3243,7 @@ input[type="button"].btn-block {
     .main__header__wrap .main__header__widget {
       margin-bottom: 20px; }
       .main__header__wrap .main__header__widget--center {
+        margin: 0 auto 20px;
         max-width: 200px; }
 
   .theme__section--main .theme__section__wrap h1 {
