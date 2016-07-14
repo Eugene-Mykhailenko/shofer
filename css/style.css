@@ -3222,4 +3222,38 @@ input[type="button"].btn-block {
     color: #fff;
     font-size: 20px; }
 
+/* =======================================================================
+	Responsive
+======================================================================= */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main__header__widget--center {
+    max-width: 200px; } }
+@media (max-width: 767px) {
+  h2 {
+    font-size: 30px; }
+
+  h3 {
+    font-size: 18px; }
+
+  .main__header__wrap {
+    display: block;
+    text-align: center;
+    padding-bottom: 1px; }
+    .main__header__wrap .main__header__widget {
+      margin-bottom: 20px; }
+      .main__header__wrap .main__header__widget--center {
+        max-width: 200px; }
+
+  .theme__section--main .theme__section__wrap h1 {
+    font-size: 40px; }
+
+  .main__footer__wrap {
+    display: block;
+    text-align: center;
+    padding-bottom: 1px; }
+    .main__footer__wrap .main__footer__widget {
+      margin-bottom: 20px; }
+      .main__footer__wrap .main__footer__widget .main__footer__social {
+        text-align: center; } }
+
 /*# sourceMappingURL=style.css.map */
