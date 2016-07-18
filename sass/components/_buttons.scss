@@ -10,7 +10,7 @@
 	padding: $btn-padding;
     margin-bottom: 0;
     color: $btn-default-color;
-	line-height: $btn-height ; //- ($btn-border * 2)
+	line-height: $btn-height - ($btn-border * 2);
     font-weight: $btn-font-weight;
     text-align: center;
 	letter-spacing: 1px;
